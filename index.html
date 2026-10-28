@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amr Elkfafy CV</title>
+<meta name="description" content="CV of Amr Mohamed Elkfafy, IT Manager specializing in hospitality IT, network and infrastructure, and pre-opening projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: a plain single column in reading order. Black on white only, hierarchy comes from weight, size and rules. Single look by choice, in both themes. */
+:root {
+  --bg: #ffffff;
+  --ink: #000000;
+  --muted: #000000;
+  --rule: #000000;
+  --accent: #000000;
+  --accent-ink: #ffffff;
+  --font: "IBM Plex Sans", Arial, "Helvetica Neue", sans-serif;
+  --font-ar: "IBM Plex Sans Arabic", "Segoe UI", Tahoma, Arial, sans-serif;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.6;
+  padding-block: 24px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.wrap { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px; }
+a { color: var(--ink); text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+
+/* Language switch: last in the page source, shown first on screen */
+.topbar { order: -1; display: flex; justify-content: flex-end; direction: ltr; }
+.lang { display: inline-flex; border: 1px solid var(--ink); border-radius: 4px; overflow: hidden; }
+.lang button {
+  font: inherit; font-size: 14px; line-height: 1; cursor: pointer; border: 0;
+  background: var(--bg); color: var(--ink); padding: 10px 16px; min-height: 40px;
+}
+.lang button[lang="ar"] { font-family: var(--font-ar); font-size: 15px; }
+.lang button + button { border-left: 1px solid var(--ink); }
+.lang button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+
+/* Header */
+h1 { font-weight: 700; font-size: clamp(1.9rem, 6vw, 2.6rem); line-height: 1.15; letter-spacing: -0.01em; margin: 0 0 6px; text-wrap: balance; }
+.alt { font-size: 1.1rem; color: var(--muted); margin: 0 0 6px; text-align: start; }
+.role { font-weight: 600; font-size: 1.05rem; margin: 0 0 8px; text-wrap: balance; }
+.meta { margin: 0 0 4px; color: var(--muted); font-size: 15px; overflow-wrap: anywhere; }
+.dl { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-top: 14px; }
+.btn {
+  display: inline-flex; align-items: center; text-decoration: none; font: inherit; font-weight: 600; font-size: 14px; cursor: pointer; border: 0; border-radius: 4px;
+  background: var(--ink); color: var(--bg); padding: 9px 18px; min-height: 40px;
+}
+.btn:hover { text-decoration: underline; }
+.dl-note, .dl-msg { font-size: 13px; color: var(--muted); }
+.dl-msg:empty { display: none; }
+
+/* Sections */
+section { border-top: 2px solid var(--ink); padding-top: 18px; margin-top: 28px; }
+section:first-of-type { margin-top: 24px; }
+h2 { font-size: 1.05rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 12px; }
+h3 { font-size: 1.05rem; font-weight: 600; line-height: 1.35; margin: 0 0 2px; text-wrap: balance; }
+p { margin: 0 0 10px; }
+ul { margin: 6px 0 0; padding-inline-start: 1.2em; padding-inline-end: 0; display: flex; flex-direction: column; gap: 6px; }
+.line { color: var(--muted); font-size: 15px; margin: 0 0 4px; }
+.note { font-style: italic; font-size: 15px; margin: 0 0 4px; }
+.job + .job { margin-top: 22px; }
+.skill { margin: 0 0 8px; }
+
+/* Arabic: its own typeface, no capitals or letter-spacing (they break Arabic joining) */
+#cv-ar, #cv-ar * { font-family: var(--font-ar); letter-spacing: 0; text-transform: none; }
+#cv-ar { font-size: 17px; line-height: 1.85; }
+#cv-ar h1 { line-height: 1.35; }
+#cv-ar h2 { font-size: 1.1rem; }
+#cv-ar .line, #cv-ar .meta, #cv-ar .note { font-size: 16px; }
+@media print { .topbar, .dl { display: none; } }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+<article id="cv-en" lang="en" dir="ltr">
+  <header>
+    <h1>Amr Mohamed Elkfafy</h1>
+    
+    <p class="role">IT Manager | Hospitality IT | Network &amp; Infrastructure | Pre-Opening Projects</p>
+    <p class="meta">Egypt | Available immediately | Open to relocation: GCC &amp; Egypt</p>
+    <p class="meta"><bdi dir="ltr">(+20) 120 068 3213</bdi> | <a href="mailto:amr.m.elkfafy@gmail.com"><bdi dir="ltr">amr.m.elkfafy@gmail.com</bdi></a> | <a href="https://linkedin.com/in/amr-elkfafy-b308b0260" target="_blank" rel="noopener"><bdi dir="ltr">linkedin.com/in/amr-elkfafy-b308b0260</bdi></a></p>
+    <div class="dl">
+      <a class="btn" href="Amr-Elkfafy-IT-Manager.pdf" download>Download CV (PDF)</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Professional Summary</h2>
+    <p>IT Manager with 6 years of IT experience, including 3+ years in hotel and resort IT at 5-star properties. Led IT for a 435-key hotel, restructuring its full network and server infrastructure, and headed IT for a 5-star resort pre-opening from design through go-live. Hands-on with Fortinet, Aruba, Cisco, Windows Server/Active Directory, VMware ESXi, and Veeam, and with hotel systems including OPERA PMS, MICROS/Simphony POS, HSIA, IPTV, and VoIP. Applies ITIL-aligned service management and ISO 27001-aligned controls.</p>
+  </section>
+
+  <section>
+    <h2>Core Skills</h2>
+    <p class="skill"><strong>IT Operations &amp; Service Management:</strong> Service Delivery; Incident Management; Problem Management; Change Management; Root Cause Analysis; SLA Management; IT Asset Management; Audit Support</p><p class="skill"><strong>Project Delivery &amp; Pre-Opening:</strong> HLD/LLD; BoQ; Vendor Selection; Implementation and Commissioning; Go-Live Readiness; Operational Handover</p><p class="skill"><strong>Leadership &amp; Budget:</strong> Team Leadership; Vendor Management; CAPEX/OPEX Planning; Budget Control</p><p class="skill"><strong>Networking &amp; Security:</strong> Fortinet FortiGate; Sophos XG; pfSense; Aruba; Cisco Switching; VLAN Segmentation; Firewall Policy Management; ISO 27001-aligned controls</p><p class="skill"><strong>Infrastructure:</strong> Windows Server 2012/2016/2019; Active Directory, DNS, DHCP; VMware ESXi; Veeam Backup; QNAP NAS; Backup and Restore Testing; DR Readiness</p><p class="skill"><strong>Hospitality &amp; ELV Systems:</strong> Oracle OPERA PMS; MICROS/Simphony POS; HSIA (Nomadix, IAC BOX); IPTV; VoIP (Avaya, Cisco); Door Locks (Salto, VingCard); CCTV; Access Control; GRMS</p><p class="skill"><strong>Additional Knowledge (self-study):</strong> Microsoft 365; Azure AD; Jira Service Management; CMDB; PCI DSS; Monitoring tools (PRTG, SolarWinds, Zabbix)</p>
+  </section>
+
+  <section>
+    <h2>Professional Experience</h2>
+    
+      <div class="job">
+        <h3>IT Manager</h3>
+        <p class="line">Tolip Hotel Olympic International City | Cairo, Egypt | Jul 2025 – Sep 2026</p>
+        
+        <ul><li>Led 24/7 IT operations for a 435-key hotel with 140 users, managing an IT team of 3 and advising executive management on technology priorities.</li><li>Led a full restructuring of the hotel's network and server infrastructure at an operating property, designing and deploying a secure, segmented network on FortiGate 201F and Aruba 7240/8325.</li><li>Implemented guest-facing platforms: Nomadix gateway, Avaya IP telephony, IPTV, and IDEMIA access control.</li><li>Integrated and optimized OPERA PMS, MICROS/Simphony POS, Finance/ERP, and Inventory/Material Control across departments.</li><li>Ran incident triage, major incident coordination, and root cause analysis using ITIL-based practices.</li><li>Owned CAPEX/OPEX planning, procurement coordination, and vendor negotiations.</li><li>Applied ISO 27001-aligned controls across access reviews, firewall rules, patch and endpoint hardening, and backup/restore testing; supported bi-annual audits.</li></ul>
+      </div>
+      <div class="job">
+        <h3>Assistant IT Manager (Acting IT Head) – Pre-Opening</h3>
+        <p class="line">Tawila Island Resort | Red Sea, Egypt | Nov 2024 – May 2025</p>
+        <p class="note">5-star private-island resort, 31 bungalows</p>
+        <ul><li>Headed the resort's IT function through pre-opening as the senior IT lead on site, managing a team of 2 on a remote private island served by a microwave internet link.</li><li>Delivered the end-to-end pre-opening IT scope (HLD/LLD, BoQ, vendor selection, implementation, commissioning, go-live readiness) across network, virtualization, cybersecurity, and DR.</li><li>Managed FortiGate 601E and Cisco switching/controller configurations through go-live ramp-up.</li><li>Configured VMware ESXi, Veeam Backup, and QNAP NAS, and validated recovery readiness through restore testing.</li><li>Led cybersecurity framework deployment following risk assessments.</li><li>Implemented and integrated OPERA PMS, MICROS/Simphony POS, Smart-HR, and IPTV, and installed Cisco VoIP for opening.</li><li>Oversaw low-voltage systems: Pelco CCTV, fire alarm, TOA PA, GRMS, and Salto locks.</li></ul>
+      </div>
+      <div class="job">
+        <h3>Assistant IT Manager</h3>
+        <p class="line">Reef Oasis Beach Resort and SENTIDO Reef Oasis Senses Resort | Sharm El Sheikh, Egypt | Nov 2023 – Nov 2024</p>
+        <p class="note">5-star, two adjoining resorts, 900+ rooms</p>
+        <ul><li>Managed Windows Server environments (2012/2016/2019), including Active Directory, DNS, and DHCP, for 200+ staff users; supported legacy systems where required.</li><li>Configured Sophos XG 135 firewall policies to tighten external access controls.</li><li>Led network enhancements using Aruba controllers, Cisco switches, and VLANs to support peak-season demand.</li><li>Implemented surveillance infrastructure (Hikvision, Tiandy) and guest Wi-Fi on IAC BOX, supporting 300+ devices daily.</li><li>Oversaw OPERA PMS, SUN, and Material Control, supporting interdepartmental data flow.</li><li>Maintained MICROS POS and VingCard smart lock systems.</li></ul>
+      </div>
+      <div class="job">
+        <h3>IT Senior Supervisor</h3>
+        <p class="line">Gemma Resort | Marsa Alam, Egypt | May 2023 – Nov 2023</p>
+        <p class="note">5-star, 313 rooms</p>
+        <ul><li>Led the Windows Server and Active Directory environment and email services (cPanel, Outlook) for 100+ users.</li><li>Delivered a segmented VLAN network (Omada Controller) separating guest and admin zones.</li><li>Implemented IAC BOX bandwidth management to control internet usage.</li><li>Deployed CCTV (Hikvision, UNV) with 24/7 monitoring.</li><li>Installed and organized network racks and SFP modules to support a scalable network topology.</li></ul>
+      </div>
+      <div class="job">
+        <h3>IT Supervisor</h3>
+        <p class="line">Osoul Soft Company | Alexandria, Egypt | Jul 2022 – Apr 2023</p>
+        
+        <ul><li>Deployed and maintained a pfSense firewall with 30+ segmentation and filtering rules.</li><li>Delivered end-to-end IT support and implementations for clients.</li><li>Implemented multi-site CCTV (Hikvision, Dahua) with remote access.</li></ul>
+      </div>
+      <div class="job">
+        <h3>IT Support Specialist</h3>
+        <p class="line">Ragab Farms (Nobaria Agricultural Development Co.) | Beheira, Egypt | Sep 2020 – Jul 2022</p>
+        
+        <ul><li>Supported operating systems and Zebra barcode printing across 3 departments.</li><li>Integrated biometric attendance with HR databases.</li><li>Maintained 50+ devices.</li></ul>
+      </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <h3>Bachelor's Degree in Management Information Systems</h3>
+    <p class="line">Abu Qir Higher Institutes | Alexandria, Egypt | Graduated May 2020</p>
+  </section>
+
+  <section>
+    <h2>Training Courses</h2>
+    <ul><li>VMware vSphere / ESXi Virtualization (VCP-DCV curriculum) | Online Course, 2023</li><li>Veeam Backup and Disaster Recovery (VMCE curriculum) | Online Course, 2023</li><li>Windows Server Administration (MCSA curriculum) | Online Course, 2020</li><li>Sophos XG Firewall Security | Online Course, 2020</li><li>Cisco Routing and Switching (CCNA curriculum) | Online Course, 2019</li><li>Networking Fundamentals (CompTIA Network+ curriculum) | Online Course, 2019</li></ul>
+  </section>
+
+  <section>
+    <h2>Languages</h2>
+    <p>Arabic: Native | English: Professional Working Proficiency</p>
+  </section>
+</article>
+
+<article id="cv-ar" lang="ar" dir="rtl" hidden>
+  <header>
+    <h1>عمرو محمد الكفافي</h1>
+    <p class="alt" dir="ltr">Amr Mohamed Elkfafy</p>
+    <p class="role">مدير تكنولوجيا المعلومات | تكنولوجيا معلومات الضيافة | الشبكات والبنية التحتية | مشاريع ما قبل الافتتاح</p>
+    <p class="meta">مصر | متاح فورًا | مستعد للانتقال إلى دول الخليج ومصر</p>
+    <p class="meta"><bdi dir="ltr">(+20) 120 068 3213</bdi> | <a href="mailto:amr.m.elkfafy@gmail.com"><bdi dir="ltr">amr.m.elkfafy@gmail.com</bdi></a> | <a href="https://linkedin.com/in/amr-elkfafy-b308b0260" target="_blank" rel="noopener"><bdi dir="ltr">linkedin.com/in/amr-elkfafy-b308b0260</bdi></a></p>
+    <div class="dl">
+      <a class="btn" href="Amr-Elkfafy-IT-Manager-AR.pdf" download>تحميل السيرة الذاتية (PDF)</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>الملخص المهني</h2>
+    <p>مدير تكنولوجيا معلومات بخبرة 6 سنوات في المجال، منها أكثر من 3 سنوات في تكنولوجيا معلومات الفنادق والمنتجعات من فئة الخمس نجوم. تولّى قيادة تكنولوجيا المعلومات في فندق يضم 435 غرفة وأعاد هيكلة شبكته وبنية الخوادم فيه بالكامل، كما ترأّس تكنولوجيا المعلومات في منتجع من فئة الخمس نجوم خلال مرحلة ما قبل الافتتاح، من التصميم حتى التشغيل الفعلي. يتمتع بخبرة عملية مباشرة في أنظمة Fortinet وAruba وCisco وWindows Server/Active Directory وVMware ESXi وVeeam، وفي أنظمة الفنادق ومنها OPERA PMS وMICROS/Simphony POS وHSIA وIPTV وVoIP. يطبّق إدارة خدمات متوافقة مع ITIL وضوابط متوافقة مع ISO 27001.</p>
+  </section>
+
+  <section>
+    <h2>المهارات الأساسية</h2>
+    <p class="skill"><strong>عمليات تكنولوجيا المعلومات وإدارة الخدمات:</strong> إدارة تقديم الخدمة؛ إدارة الحوادث؛ إدارة المشكلات؛ إدارة التغيير؛ تحليل الأسباب الجذرية؛ إدارة اتفاقيات مستوى الخدمة (SLA)؛ إدارة أصول تكنولوجيا المعلومات؛ دعم عمليات التدقيق</p><p class="skill"><strong>تنفيذ المشاريع وما قبل الافتتاح:</strong> التصميم عالي المستوى والتفصيلي (HLD/LLD)؛ جداول الكميات (BoQ)؛ اختيار الموردين؛ التنفيذ والتشغيل التجريبي (Commissioning)؛ الجاهزية للتشغيل الفعلي (Go-Live)؛ التسليم التشغيلي</p><p class="skill"><strong>القيادة والميزانية:</strong> قيادة الفرق؛ إدارة الموردين؛ تخطيط النفقات الرأسمالية والتشغيلية (CAPEX/OPEX)؛ ضبط الميزانية</p><p class="skill"><strong>الشبكات والأمن:</strong> Fortinet FortiGate؛ Sophos XG؛ pfSense؛ Aruba؛ محولات Cisco؛ تقسيم الشبكات (VLAN)؛ إدارة سياسات الجدار الناري؛ ضوابط متوافقة مع ISO 27001</p><p class="skill"><strong>البنية التحتية:</strong> Windows Server 2012/2016/2019؛ Active Directory وDNS وDHCP؛ VMware ESXi؛ Veeam Backup؛ QNAP NAS؛ اختبار النسخ الاحتياطي والاستعادة؛ الجاهزية للتعافي من الكوارث (DR)</p><p class="skill"><strong>أنظمة الضيافة والتيار الخفيف (ELV):</strong> Oracle OPERA PMS؛ MICROS/Simphony POS؛ HSIA (Nomadix وIAC BOX)؛ IPTV؛ VoIP (Avaya وCisco)؛ أقفال الأبواب (Salto وVingCard)؛ كاميرات المراقبة (CCTV)؛ التحكم في الدخول؛ GRMS</p><p class="skill"><strong>معارف إضافية (تعلم ذاتي):</strong> Microsoft 365؛ Azure AD؛ Jira Service Management؛ CMDB؛ PCI DSS؛ أدوات المراقبة (PRTG وSolarWinds وZabbix)</p>
+  </section>
+
+  <section>
+    <h2>الخبرات المهنية</h2>
+    
+      <div class="job">
+        <h3>مدير تكنولوجيا المعلومات</h3>
+        <p class="line">Tolip Hotel Olympic International City | القاهرة، مصر | يوليو 2025 – سبتمبر 2026</p>
+        
+        <ul><li>قيادة عمليات تكنولوجيا المعلومات على مدار الساعة في فندق يضم 435 غرفة و140 مستخدمًا، وإدارة فريق من 3 أفراد، وتقديم المشورة للإدارة التنفيذية بشأن أولويات التكنولوجيا.</li><li>قيادة إعادة هيكلة كاملة لشبكة الفندق وبنية الخوادم فيه أثناء التشغيل، مع تصميم وتنفيذ شبكة آمنة مقسّمة على أجهزة FortiGate 201F وAruba 7240/8325.</li><li>تنفيذ المنصات الموجهة للنزلاء: بوابة Nomadix، وهاتف IP من Avaya، وIPTV، وأنظمة التحكم في الدخول من IDEMIA.</li><li>ربط وتحسين أنظمة OPERA PMS وMICROS/Simphony POS والنظام المالي/ERP ونظام المخزون ومراقبة المواد بين الأقسام.</li><li>إدارة فرز الحوادث وتنسيق الحوادث الكبرى وتحليل الأسباب الجذرية وفق ممارسات ITIL.</li><li>تولي تخطيط النفقات الرأسمالية والتشغيلية (CAPEX/OPEX) وتنسيق المشتريات والتفاوض مع الموردين.</li><li>تطبيق ضوابط متوافقة مع ISO 27001 شملت مراجعات الصلاحيات وقواعد الجدار الناري وتحديثات الأنظمة وتأمين الأجهزة الطرفية واختبار النسخ الاحتياطي والاستعادة، ودعم عمليات التدقيق التي تُجرى مرتين سنويًا.</li></ul>
+      </div>
+      <div class="job">
+        <h3>مساعد مدير تكنولوجيا المعلومات (قائم بأعمال رئيس تكنولوجيا المعلومات) – مرحلة ما قبل الافتتاح</h3>
+        <p class="line">Tawila Island Resort | البحر الأحمر، مصر | نوفمبر 2024 – مايو 2025</p>
+        <p class="note">منتجع جزيرة خاصة من فئة الخمس نجوم، 31 بنغالو</p>
+        <ul><li>قيادة قسم تكنولوجيا المعلومات في المنتجع خلال مرحلة ما قبل الافتتاح بصفة أعلى مسؤول عن تكنولوجيا المعلومات في الموقع، وإدارة فريق من فردين في جزيرة نائية تخدمها وصلة إنترنت لاسلكية (Microwave).</li><li>تنفيذ نطاق عمل تكنولوجيا المعلومات الكامل لمرحلة ما قبل الافتتاح (HLD/LLD وBoQ واختيار الموردين والتنفيذ والتشغيل التجريبي والجاهزية للتشغيل الفعلي) في الشبكات والبنية الافتراضية والأمن السيبراني والتعافي من الكوارث (DR).</li><li>إدارة إعدادات FortiGate 601E ومحولات ووحدات تحكم Cisco حتى استقرار التشغيل بعد الافتتاح.</li><li>إعداد VMware ESXi وVeeam Backup وQNAP NAS، والتحقق من جاهزية الاستعادة عبر اختبارات الاسترجاع.</li><li>قيادة تطبيق إطار الأمن السيبراني بعد إجراء تقييمات المخاطر.</li><li>تنفيذ أنظمة OPERA PMS وMICROS/Simphony POS وSmart-HR وIPTV وربطها ببعضها، وتركيب نظام الاتصال الهاتفي Cisco VoIP قبل الافتتاح.</li><li>الإشراف على أنظمة التيار الخفيف: كاميرات Pelco CCTV وإنذار الحريق ونظام الصوت العام TOA PA ونظام GRMS وأقفال Salto.</li></ul>
+      </div>
+      <div class="job">
+        <h3>مساعد مدير تكنولوجيا المعلومات</h3>
+        <p class="line">Reef Oasis Beach Resort and SENTIDO Reef Oasis Senses Resort | شرم الشيخ، مصر | نوفمبر 2023 – نوفمبر 2024</p>
+        <p class="note">منتجعان متجاوران من فئة الخمس نجوم، أكثر من 900 غرفة</p>
+        <ul><li>إدارة بيئات Windows Server (2012/2016/2019) بما فيها Active Directory وDNS وDHCP لأكثر من 200 مستخدم، ودعم الأنظمة القديمة عند الحاجة.</li><li>إعداد سياسات الجدار الناري Sophos XG 135 لتشديد ضوابط الوصول الخارجي.</li><li>قيادة تحسينات الشبكة باستخدام وحدات تحكم Aruba ومحولات Cisco وشبكات VLAN لدعم ذروة الموسم السياحي.</li><li>تنفيذ بنية المراقبة بالكاميرات (Hikvision وTiandy) وشبكة Wi-Fi للنزلاء عبر IAC BOX بدعم أكثر من 300 جهاز يوميًا.</li><li>الإشراف على أنظمة OPERA PMS وSUN وMaterial Control لدعم تدفق البيانات بين الأقسام.</li><li>صيانة أنظمة MICROS POS وأقفال VingCard الذكية.</li></ul>
+      </div>
+      <div class="job">
+        <h3>مشرف أول تكنولوجيا المعلومات</h3>
+        <p class="line">Gemma Resort | مرسى علم، مصر | مايو 2023 – نوفمبر 2023</p>
+        <p class="note">منتجع من فئة الخمس نجوم، 313 غرفة</p>
+        <ul><li>قيادة بيئة Windows Server وActive Directory وخدمات البريد الإلكتروني (cPanel وOutlook) لأكثر من 100 مستخدم.</li><li>تنفيذ شبكة VLAN مقسّمة (Omada Controller) تفصل بين نطاقي النزلاء والإدارة.</li><li>تطبيق إدارة عرض النطاق الترددي عبر IAC BOX للتحكم في استخدام الإنترنت.</li><li>تركيب كاميرات مراقبة (Hikvision وUNV) مع مراقبة على مدار الساعة.</li><li>تركيب وتنظيم حوامل الشبكة ووحدات SFP لدعم بنية شبكة قابلة للتوسع.</li></ul>
+      </div>
+      <div class="job">
+        <h3>مشرف تكنولوجيا المعلومات</h3>
+        <p class="line">Osoul Soft Company | الإسكندرية، مصر | يوليو 2022 – أبريل 2023</p>
+        
+        <ul><li>نشر وصيانة جدار ناري pfSense بأكثر من 30 قاعدة للتقسيم والتصفية.</li><li>تقديم الدعم الفني والتنفيذات التكنولوجية المتكاملة للعملاء.</li><li>تنفيذ أنظمة مراقبة بالكاميرات متعددة المواقع (Hikvision وDahua) مع وصول عن بُعد.</li></ul>
+      </div>
+      <div class="job">
+        <h3>أخصائي دعم تكنولوجيا المعلومات</h3>
+        <p class="line">Ragab Farms (Nobaria Agricultural Development Co.) | البحيرة، مصر | سبتمبر 2020 – يوليو 2022</p>
+        
+        <ul><li>دعم أنظمة التشغيل وطباعة الباركود Zebra في 3 أقسام.</li><li>ربط نظام البصمة لتسجيل الحضور بقواعد بيانات الموارد البشرية.</li><li>صيانة أكثر من 50 جهازًا.</li></ul>
+      </div>
+  </section>
+
+  <section>
+    <h2>التعليم</h2>
+    <h3>بكالوريوس نظم المعلومات الإدارية</h3>
+    <p class="line">معاهد أبو قير العليا | الإسكندرية، مصر | التخرج: مايو 2020</p>
+  </section>
+
+  <section>
+    <h2>الدورات التدريبية</h2>
+    <ul><li>VMware vSphere / ESXi للمحاكاة الافتراضية (منهج VCP-DCV) | دورة عبر الإنترنت، 2023</li><li>Veeam للنسخ الاحتياطي والتعافي من الكوارث (منهج VMCE) | دورة عبر الإنترنت، 2023</li><li>إدارة Windows Server (منهج MCSA) | دورة عبر الإنترنت، 2020</li><li>أمن الجدار الناري Sophos XG | دورة عبر الإنترنت، 2020</li><li>Cisco للتوجيه والتبديل (منهج CCNA) | دورة عبر الإنترنت، 2019</li><li>أساسيات الشبكات (منهج CompTIA Network+‎) | دورة عبر الإنترنت، 2019</li></ul>
+  </section>
+
+  <section>
+    <h2>اللغات</h2>
+    <p>العربية: اللغة الأم | الإنجليزية: كفاءة مهنية في العمل</p>
+  </section>
+</article>
+  <div class="topbar">
+    <div class="lang" role="group" aria-label="Language / اللغة">
+      <button type="button" data-lang="en" aria-pressed="true">English</button>
+      <button type="button" data-lang="ar" lang="ar" aria-pressed="false">العربية</button>
+    </div>
+  </div>
+</main>
+
+<script>
+(function () {
+
+  // Language switch. The address ends in #ar for the Arabic version and #en (or nothing) for English.
+  var pages = { en: document.getElementById("cv-en"), ar: document.getElementById("cv-ar") };
+  var switches = document.querySelectorAll(".lang button");
+  function show(lang) {
+    pages.en.hidden = lang !== "en";
+    pages.ar.hidden = lang !== "ar";
+    switches.forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-lang") === lang)); });
+  }
+  function fromHash() { return location.hash === "#ar" ? "ar" : "en"; }
+  switches.forEach(function (b) {
+    b.addEventListener("click", function () {
+      var lang = b.getAttribute("data-lang");
+      show(lang);
+      try { location.hash = lang; } catch (e) {}
+    });
+  });
+  window.addEventListener("hashchange", function () { show(fromHash()); });
+  show(fromHash());
+
+})();
+</script>
+</body>
+</html>
